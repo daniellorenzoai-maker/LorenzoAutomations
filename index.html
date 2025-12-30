@@ -13,6 +13,45 @@
             --text-secondary: #94a3b8;
             --accent: #38bdf8; /* Electric Blue */
             --accent-hover: #0ea5e9;
+            /* 1. FIX THE NAV LINKS (Force White) */
+.nav-links a {
+    color: #ffffff !important; /* Forces white even if visited */
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent) !important; /* Blue on hover */
+}
+
+/* 2. STYLE THE NEW TEXT LOGO */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Space between Icon and Text */
+    cursor: default;
+}
+
+.logo-text {
+    font-weight: 800; /* Extra Bold */
+    font-size: 1.1rem; /* Readable size */
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* 3. REFINE THE LOGO ICON BOX */
+.logo-img {
+    height: 40px; 
+    width: 40px; /* Forces a perfect square */
+    background-color: white; 
+    padding: 6px; /* Space inside the white box */
+    border-radius: 8px; /* Rounded corners */
+    object-fit: contain; /* Ensures bolts don't stretch */
+}
         }
 
         body {
@@ -204,7 +243,9 @@ nav {
     <div class="container">
         <nav>
             <div class="logo-area">
-    <img src="images/logo-blue.png" alt="Lorenzo Automations" class="logo-img">
+    <img src="images/ai.png" alt="Logo" class="logo-img">
+    
+    <span class="logo-text">LORENZO <span style="color:var(--accent);">AUTOMATIONS</span></span>
 </div>
             <div class="nav-links">
                 <a href="#work">Portfolio</a>
@@ -277,6 +318,7 @@ nav {
 
 </body>
 </html>
+
 
 
 
