@@ -50,9 +50,25 @@
             letter-spacing: 1px;
         }
 
-        .logo-img {
-    height: 40px;
+        /* NEW LOGO STYLE - Makes it look like a pro app icon */
+.logo-img {
+    height: 50px; /* Slightly bigger */
     width: auto;
+    background-color: white; /* Ensures clean background */
+    padding: 5px 10px; /* Adds breathing room around the logo text */
+    border-radius: 8px; /* Smooth rounded corners */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* subtle drop shadow */
+    display: block; /* Fixes alignment issues */
+}
+
+/* Update Nav to prevent overlapping */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0; /* More vertical space */
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
 }
 
         .nav-links a {
@@ -74,13 +90,14 @@
         }
 
         h1 {
-            font-size: 3.5rem;
-            line-height: 1.1;
-            margin-bottom: 20px;
-            background: linear-gradient(to right, #fff, #94a3b8);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    letter-spacing: -2px; /* Tighter letters = more modern/premium look */
+    background: linear-gradient(to right, #fff, #cbd5e1); /* Softer gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
         .hero p {
             color: var(--text-secondary);
@@ -188,7 +205,6 @@
         <nav>
             <div class="logo-area">
     <img src="images/logo-blue.png" alt="Lorenzo Automations" class="logo-img">
-    <span>LORENZO AUTOMATIONS</span>
 </div>
             <div class="nav-links">
                 <a href="#work">Portfolio</a>
@@ -261,6 +277,7 @@
 
 </body>
 </html>
+
 
 
 
