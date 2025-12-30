@@ -51,7 +51,7 @@
         }
         
         .logo-img {
-            height: 40px; /* Adjust based on your logo */
+            height: 40px; /<img src="images/logo-blue.png" alt="Lorenzo Automations" class="logo-img">/
             width: auto;
         }
 
@@ -99,11 +99,20 @@
             transition: transform 0.2s, background-color 0.2s;
             display: inline-block;
         }
+/* Add this inside your <style> tags */
+.btn-glow {
+    background-color: var(--accent);
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.5); /* Glowing effect */
+    padding: 18px 40px; /* Bigger button */
+    font-size: 1.1rem;
+    border: 1px solid rgba(255,255,255,0.2);
+}
 
-        .btn:hover {
-            background-color: var(--accent-hover);
-            transform: translateY(-2px);
-        }
+.btn-glow:hover {
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.8); /* Brighter glow on hover */
+    transform: translateY(-3px);
+}
+       
 
         /* Sections General */
         section {
@@ -234,13 +243,15 @@
 
         <section id="book">
             <div class="booking-container">
-                <h2 class="section-title" style="margin-bottom: 30px;">Let's Build Your System</h2>
-                <p style="color: var(--text-secondary); margin-bottom: 40px;">Select a time below for a 15-minute discovery call.</p>
-                
-                <div style="border: 1px dashed #333; padding: 50px; color: #666;">
-                    https://calendly.com/daniel-lorenzo-ai/ai-automation-strategy-session
-                 </div>
-                 </div>
+    <h2 class="section-title" style="margin-bottom: 20px;">Let's Build Your System</h2>
+    <p style="color: var(--text-secondary); margin-bottom: 40px; font-size: 1.1rem;">
+        Ready to automate your workflow? Select a time for your free 15-minute strategy session.
+    </p>
+    
+    <a href="https://calendly.com/daniel-lorenzo-ai/ai-automation-strategy-session" target="_blank" class="btn btn-glow">
+        Book Strategy Session &rarr;
+    </a>
+</div>
         </section>
 
         <footer>
@@ -250,4 +261,5 @@
 
 </body>
 </html>
+
 
