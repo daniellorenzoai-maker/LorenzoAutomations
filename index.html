@@ -52,16 +52,17 @@
     text-transform: uppercase;
 }
 
-/* THE ONE AND ONLY LOGO RULE */
+/* FINAL LOGO FIX */
 .logo-img {
-    height: 85px;           /* Sets the perfect size */
-    width: auto;            /* Keeps the shape correct */
-    background: transparent;/* No white box */
-    padding: 0;             /* No extra spacing */
-    margin-right: 10px;     /* Small gap between icon and text */
-    vertical-align: middle; /* Aligns perfectly with the text */
-    border-radius: 0;       /* Removes rounded corners */
-    box-shadow: none;       /* Removes any glow/shadow */
+    height: 75px;              /* Much bigger (was 55px) */
+    width: auto;               /* Keeps the aspect ratio */
+    background: transparent !important; /* FORCES the box to disappear */
+    padding: 0 !important;     /* Removes any padding inside the box */
+    margin-right: 15px;        /* Adds space between logo and text */
+    vertical-align: middle;    
+    border-radius: 0;          
+    box-shadow: none !important; /* Removes any shadow/outline */
+    transform: scale(1.2);     /* Zooms in slightly on the dashes */
 }
 .nav-links a:hover {
     color: var(--accent) !important; /* Blue on hover */
@@ -339,6 +340,7 @@ nav {
 
 </body>
 </html>
+
 
 
 
